@@ -43,5 +43,5 @@ def parseone(i):
     print('第%s页已爬取'%str(i + 1))
 if __name__ == '__main__':
     with ThreadPoolExecutor(max_workers=5) as t:
-        for i in range(2019):
+        for i in range(819):
             t.submit(parseone,i)
