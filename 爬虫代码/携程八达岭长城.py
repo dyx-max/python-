@@ -4,7 +4,7 @@ import csv
 from concurrent.futures import ThreadPoolExecutor
 from proxy import get_proxy
 
-f = open('初步处理的数据_八达岭长城.csv',mode='a',newline='',encoding='utf-8')
+f = open('八达岭长城.csv',mode='a',newline='',encoding='utf-8')
 writer = csv.writer(f)
 def parsepage(i):
     url = 'https://m.ctrip.com/restapi/soa2/13444/json/getCommentCollapseList'
