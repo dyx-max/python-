@@ -54,5 +54,5 @@ def parsepage(i):
     print('第%s页已爬取'% str(i + 1))
 if __name__ == '__main__':
     with ThreadPoolExecutor(max_workers=5) as t:
-        for i in range(0,92):
+        for i in range(0,300):
             t.submit(parsepage,i)
