@@ -23,7 +23,7 @@ class Config:
         self.epochs = 4  # Number of training epochs.
         self.lr = 5e-5  # Learning rate for AdamW.
         self.eps = 1e-8  # AdamW epsilon.
-        self.MAX_LEN = 32  # Maximum length of the input.
+        self.MAX_LEN = 256  # Maximum length of the input.
 
 
 class BertDataProcessing(Config):
